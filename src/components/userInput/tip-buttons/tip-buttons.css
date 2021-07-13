@@ -1,0 +1,37 @@
+@import url('../../../index.css');
+
+.tip-label {
+	color: var(--very-dark-grayish-cyan);
+	width: 100%;
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+
+.tip-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.tip-btn {
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	padding: 10px;
+	margin: 7px;
+	border-radius: 5px;
+	background-color: var(--very-dark-cyan);
+	color: var(--white);
+	font-weight: 500;
+	font-size: var(--font-size-form);
+	font-family: 'Space Mono', monospace;
+}
+
+.tip-btn:hover,
+.active {
+	background-color: var(--primary-color);
+	color: var(--very-dark-cyan);
+}

@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import './index.css';
+import UserInput from './components/userInput/userInput';
+import TipOutput from './components/tipOutput/tipOutput';
+
+import logo from './images/logo.svg';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [tipPerPerson, setTipPerPerson] = useState(0);
+	const [totalPerPerson, setTotalPerPerson] = useState(0);
+
+	const setOutput = (tip, total) => {
+		setTipPerPerson(tip);
+		setTotalPerPerson(total);
+	};
+
+	return (
+		<div className='container'>
+			<img src={logo} className='logo' alt='logo' />
+			<div className='calculator-container'>
+				<UserInput setOutput={setOutput} />
+				<TipOutput
+					tipPerPerson={tipPerPerson}
+					totalPerPerson={totalPerPerson}
+				/>
+			</div>
+		</div>
+	);
 }
 
 export default App;

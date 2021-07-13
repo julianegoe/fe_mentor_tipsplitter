@@ -1,0 +1,57 @@
+@import url('../../index.css');
+
+.output-container {
+	background-color: var(--very-dark-cyan);
+	border-radius: 15px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.output-label {
+	color: var(--white);
+	width: 50%;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+.output-value {
+	color: var(--primary-color);
+	font-size: var(--font-size-output-value);
+	padding: 5px;
+	margin-bottom: 15px;
+}
+
+.per-person {
+	font-size: 14px;
+	color: var(--dark-grayish-cyan);
+	letter-spacing: 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.reset-btn {
+	background-color: var(--primary-color);
+	cursor: pointer;
+	color: var(--very-dark-cyan);
+	width: 100%;
+	font-size: var(--font-size-form);
+	border: none;
+	border-radius: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 15px;
+	font-weight: 700;
+}
+
+.reset-btn:hover {
+	background-color: var(--dark-grayish-cyan);
+	color: var(--very-dark-cyanr);
+}

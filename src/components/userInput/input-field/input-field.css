@@ -1,0 +1,50 @@
+@import url('../../../index.css');
+
+.input-label {
+	color: var(--very-dark-grayish-cyan);
+	width: 100%;
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+
+.input-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.field-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: var(--very-light-grayish-cyan);
+	border-radius: 5px;
+}
+
+.icon {
+	top: 100%;
+	padding: 10px;
+}
+
+input {
+	background-color: var(--very-light-grayish-cyan);
+	color: var(--very-dark-grayish-cyan);
+	width: 100%;
+	border-radius: 5px;
+	padding: 10px;
+	border: none;
+	outline: none;
+	text-align: right;
+	font-size: var(--font-size-form);
+	font-weight: 700;
+	font-family: 'Space Mono', monospace;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
