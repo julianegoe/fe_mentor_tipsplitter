@@ -1,0 +1,8 @@
+@import url('../../index.css');
+
+@media screen and (min-width: 992px) {
+	.input-wrapper {
+		width: 50%;
+		margin-right: 20px;
+	}
+}

@@ -24,7 +24,7 @@
 
 .output-value {
 	color: var(--primary-color);
-	font-size: var(--font-size-output-value);
+	font-size: var(--font-size-output-value-mobile);
 	padding: 5px;
 	margin-bottom: 15px;
 }
@@ -54,4 +54,17 @@
 .reset-btn:hover {
 	background-color: var(--dark-grayish-cyan);
 	color: var(--very-dark-cyanr);
+}
+
+@media screen and (min-width: 992px) {
+	.output-container {
+		width: 50%;
+		align-items: space-between;
+		justify-content: space-between;
+	}
+
+	.output-value {
+		color: var(--primary-color);
+		font-size: var(--font-size-output-value-desktop);
+	}
 }

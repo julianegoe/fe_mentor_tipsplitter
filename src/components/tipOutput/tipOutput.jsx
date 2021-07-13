@@ -1,7 +1,7 @@
 import React from 'react';
 import './tipOutput.css';
 
-function TipOutput({ tipPerPerson, totalPerPerson }) {
+function TipOutput({ tipPerPerson, totalPerPerson, reset }) {
 	return (
 		<div className='output-container'>
 			<div className='output-label'>
@@ -14,7 +14,13 @@ function TipOutput({ tipPerPerson, totalPerPerson }) {
 				<div className='per-person'>/ person</div>
 			</div>
 			<div className='output-value'>${totalPerPerson.toFixed(2)}</div>
-			<button className='reset-btn'>RESET</button>
+			<button
+				className='reset-btn'
+				onClick={() => {
+					reset();
+				}}>
+				RESET
+			</button>
 		</div>
 	);
 }

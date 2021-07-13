@@ -8,7 +8,8 @@
 	--white: hsl(0, 0%, 100%);
 
 	--font-size-form: 24px;
-	--font-size-output-value: 28px;
+	--font-size-output-value-mobile: 28px;
+	--font-size-output-value-desktop: 36px;
 }
 
 * {
@@ -22,7 +23,6 @@
 		font-family: 'Space Mono', monospace;
 		background-color: var(--light-grayish-cyan);
 	}
-
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -43,5 +43,12 @@
 		border-radius: 15px;
 		padding: 25px;
 		margin: 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.calculator-container {
+		flex-direction: row;
+		width: 70%;
 	}
 }

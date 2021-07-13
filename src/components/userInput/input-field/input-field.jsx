@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import './input-field.css';
 
-function InputField({ icon, label, step, type, handleInput }) {
-	const [value, seValue] = useState(1);
+function InputField({ icon, label, step, type, valueProp, handleInput }) {
+	const [value, setValue] = useState(1);
 	const [error, setError] = useState('');
 
 	useEffect(() => {
 		if (validated()) {
 			handleInput(type, value);
 		} else return;
-	}, [value, type, handleInput]);
+	});
 
 	const validated = () => {
 		let error = '';
@@ -35,7 +35,7 @@ function InputField({ icon, label, step, type, handleInput }) {
 						step={step}
 						value={value}
 						onChange={(event) => {
-							seValue(event.target.value);
+							setValue(event.target.value);
 						}}></input>
 				</div>
 				<div style={{ color: 'red' }}>{error}</div>
